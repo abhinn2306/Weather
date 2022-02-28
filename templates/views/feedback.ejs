@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/headerlinks.ejs') %>
+        <title>Feedback</title>
+</head>
+
+<body>
+    <%- include('../partials/navbar.ejs') %>
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class=" main_box">
+                        <div class="top_box">
+                            <h1>Feedback Form</h1>
+                            <p>Fill This Feedback Form :</p>
+                        </div>
+                        <form action="/thanks" method="post" class="feed_form">
+                            <div class="content_box">
+                                <label for="User_name">Name:</label>
+                                <input type="text" name="UserName" id="User_name" placeholder="Enter Your Name" >
+                                <label for="Email">E-Mail:</label>
+                                <input type="email" name="Email" id="Email" placeholder="Enter Your Email Address" >
+                                <label for="feedback">Feedback:</label>
+                                  
+                                <textarea name="feedback" id="feedback" cols="10" rows="6"
+                                    placeholder="Enter Your Feedback" ></textarea>
+                                <input type="submit" value="submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%- include('../partials/footer.ejs') %>
+</body>
+
+</html>
